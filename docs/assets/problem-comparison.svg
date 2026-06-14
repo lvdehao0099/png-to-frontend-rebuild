@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">PNG to frontend rebuild comparison</title>
+  <desc id="desc">A three-panel comparison showing an AI mockup, a poor screenshot-sliced implementation, and a structured rebuild with generated assets.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f3ea"/>
+      <stop offset="1" stop-color="#e7f2ee"/>
+    </linearGradient>
+    <linearGradient id="mock" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#27364a"/>
+      <stop offset="1" stop-color="#68b39b"/>
+    </linearGradient>
+    <linearGradient id="asset" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4c56f"/>
+      <stop offset="1" stop-color="#e56f61"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#223044" flood-opacity=".16"/>
+    </filter>
+    <style>
+      .label { font: 700 28px Arial, sans-serif; fill: #1f2933; }
+      .small { font: 500 17px Arial, sans-serif; fill: #5d6b78; }
+      .tiny { font: 600 13px Arial, sans-serif; fill: #72808d; }
+      .panel { fill: #fff; stroke: #d9e0e6; stroke-width: 1; }
+      .line { stroke: #d5dde5; stroke-width: 10; stroke-linecap: round; }
+      .bad { fill: #f7d9d9; stroke: #d65f5f; }
+      .good { fill: #dff1e9; stroke: #55a680; }
+      .chip { fill: #eef3f7; }
+    </style>
+  </defs>
+  <rect width="1200" height="520" rx="0" fill="url(#bg)"/>
+
+  <g transform="translate(42 42)">
+    <text class="label" x="0" y="0">AI mockup</text>
+    <text class="small" x="0" y="32">Beautiful pixels, not yet implementation assets</text>
+    <rect class="panel" x="0" y="62" width="336" height="378" rx="22" filter="url(#shadow)"/>
+    <rect x="24" y="86" width="288" height="128" rx="18" fill="url(#mock)"/>
+    <circle cx="76" cy="150" r="34" fill="url(#asset)"/>
+    <path d="M66 150l9 10 21-27" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="256" cy="132" r="25" fill="#f5efe4" opacity=".92"/>
+    <circle cx="282" cy="166" r="17" fill="#dff1e9" opacity=".9"/>
+    <rect x="24" y="242" width="84" height="84" rx="20" fill="#f0f5f7"/>
+    <rect x="126" y="242" width="84" height="84" rx="20" fill="#f0f5f7"/>
+    <rect x="228" y="242" width="84" height="84" rx="20" fill="#f0f5f7"/>
+    <circle cx="66" cy="276" r="18" fill="#5aa88a"/>
+    <path d="M154 286c20-34 39-34 28 0z" fill="#e0a24c"/>
+    <rect x="254" y="263" width="32" height="26" rx="7" fill="#65758a"/>
+    <path class="line" d="M36 358h210"/>
+    <path class="line" d="M36 389h150"/>
+  </g>
+
+  <g transform="translate(432 42)">
+    <text class="label" x="0" y="0">Naive conversion</text>
+    <text class="small" x="0" y="32">Either sliced screenshots or weak CSS approximations</text>
+    <rect class="panel" x="0" y="62" width="336" height="378" rx="22" filter="url(#shadow)"/>
+    <rect x="24" y="86" width="288" height="128" rx="18" fill="#dfe6eb"/>
+    <path d="M38 103h260M38 133h260M38 163h260M38 193h260" stroke="#c6d0d8" stroke-width="2"/>
+    <rect x="24" y="242" width="84" height="84" rx="12" class="bad"/>
+    <rect x="126" y="242" width="84" height="84" rx="12" class="bad"/>
+    <rect x="228" y="242" width="84" height="84" rx="12" class="bad"/>
+    <text class="tiny" x="43" y="290">crop</text>
+    <text class="tiny" x="145" y="290">crop</text>
+    <text class="tiny" x="247" y="290">crop</text>
+    <path class="line" d="M36 358h210"/>
+    <path class="line" d="M36 389h150"/>
+    <path d="M38 228l260 122M298 228L38 350" stroke="#d65f5f" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+  </g>
+
+  <g transform="translate(822 42)">
+    <text class="label" x="0" y="0">Rebuild workflow</text>
+    <text class="small" x="0" y="32">Real code plus explicit asset generation/extraction</text>
+    <rect class="panel" x="0" y="62" width="336" height="378" rx="22" filter="url(#shadow)"/>
+    <rect x="24" y="86" width="288" height="128" rx="18" fill="url(#mock)"/>
+    <circle cx="76" cy="150" r="34" fill="url(#asset)"/>
+    <path d="M66 150l9 10 21-27" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="24" y="236" width="288" height="46" rx="12" class="chip"/>
+    <text class="tiny" x="42" y="264">DOM layout + editable text</text>
+    <rect x="24" y="296" width="132" height="46" rx="12" class="good"/>
+    <text class="tiny" x="43" y="324">generated assets</text>
+    <rect x="180" y="296" width="132" height="46" rx="12" class="good"/>
+    <text class="tiny" x="201" y="324">ruler compare</text>
+    <path class="line" d="M36 372h210"/>
+    <path class="line" d="M36 403h150"/>
+    <path d="M268 376l15 15 30-42" fill="none" stroke="#55a680" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
