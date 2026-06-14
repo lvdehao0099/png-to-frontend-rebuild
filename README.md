@@ -4,7 +4,7 @@
 
 **Turn AI-designed UI screenshots into real frontend code without flattening the hard parts.**
 
-English | [Simplified Chinese](README.zh-CN.md)
+English | [简体中文](README.zh-CN.md)
 
 </div>
 
