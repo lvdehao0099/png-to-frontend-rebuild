@@ -1,0 +1,6 @@
+interface:
+  display_name: "PNG to Frontend Rebuild"
+  short_description: "Rebuild PNG mockups as frontend with generated visual assets."
+  default_prompt: "Use $png-to-frontend-rebuild to convert these PNG UI mockups into a runnable frontend project with mandatory generated/extracted visual assets, live DOM UI, and screenshot verification."
+policy:
+  allow_implicit_invocation: true
