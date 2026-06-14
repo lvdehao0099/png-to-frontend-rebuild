@@ -72,7 +72,3 @@ Make it high fidelity. Do not slice screenshot icons. Use generated or extracted
 - `references/`: deeper rules for asset planning, framework adaptation, calibration, and mobile rebuilds.
 - `scripts/make_ruler_compare.py`: helper for source-vs-implementation comparison images.
 - `assets/html-template/`: a small static HTML starting point.
-
-## License
-
-No license has been selected yet. Treat the project as source-available until a license is added.

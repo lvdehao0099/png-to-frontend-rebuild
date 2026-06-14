@@ -74,7 +74,3 @@ C:\path\to\mockup.png
 - `references/`：资产规划、框架适配、校准和移动端重建规则。
 - `scripts/make_ruler_compare.py`：生成源图和实现截图的对比图。
 - `assets/html-template/`：一个很小的静态 HTML 起点。
-
-## License
-
-暂未选择开源协议。在正式添加 license 前，请按 source-available 项目理解。
